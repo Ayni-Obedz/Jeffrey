@@ -10,8 +10,8 @@ const GLYPHS = ["0", "1", "{", "}", "<", ">", "/", "+", "=", "*", "[", "]"];
 
 // How wide the network is allowed to get: 1 = square, 2.2 = very wide.
 // It follows the shape of the screen, but never goes outside these limits.
-const MIN_ASPECT = 0.8;
-const MAX_ASPECT = 1.1;
+const MIN_ASPECT = 0.9;
+const MAX_ASPECT = 1;
 const calcAspect = () =>
   Math.min(
     MAX_ASPECT,

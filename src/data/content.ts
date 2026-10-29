@@ -30,8 +30,8 @@ export const site = {
 export const navLinks = [
   { to: "#top", label: "Home" },
   { to: "#about", label: "About" },
-  { to: "#career", label:"Career" },
   { to: "#work", label: "Work" },
+  { to: "#career", label:"Career" },
   { to: "#company", label: "Company" },
 ];
 
