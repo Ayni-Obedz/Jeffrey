@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: RGB(10, 10, 10);
+  --color-accent: #38bdf8;
+  --color-leaf: RGB(11, 235, 94);
+
+
+  /* Swap this stack for the bold font once chosen */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --animate-float: float 14s ease-in-out infinite;
+  --animate-float-slow: float 22s ease-in-out infinite reverse;
+
+   --animate-bob: bob 6s ease-in-out infinite;
+  --animate-ring: ring 2.2s ease-out forwards;
+  --animate-flash: flash 1.2s ease-out forwards;
+
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(40px, 30px) scale(1.1); }
+  }
+
+   @keyframes bob {
+    0%, 100% { translate: 0 0; }
+    50% { translate: 0 -6px; }
+  }
+  @keyframes ring {
+    from { scale: 0.2; opacity: 0.9; }
+    to { scale: 7; opacity: 0; }
+  }
+  @keyframes flash {
+    from { scale: 0.4; opacity: 1; }
+    to { scale: 4; opacity: 0; }
+  }
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--color-ink); }
+section[id] { scroll-margin-top: 4.5rem; }
