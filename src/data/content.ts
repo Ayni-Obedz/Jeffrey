@@ -15,7 +15,7 @@ export type Role = { company: string; role: string; logo: string; period: string
 export type Service = { title: string; blurb: string; points: string[]; card: string; img?: string; };
 
 export const site = {
-  name: " JEFFERY EJEZIE",
+  name: " JEFFREY EJEZIE",
   logo:"/Bro Jeff/Jeff.jpeg",
   title: "",
   company: "",
