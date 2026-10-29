@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { nodes, EDGES, type NetNode } from "../data/Network";
+import { nodes, EDGES } from "../data/Network";
 
 const centre = nodes[0];
 const SPREAD = 1800; // ms for the light to travel from the centre to the farthest node (and again back)
@@ -20,59 +20,6 @@ const calcAspect = () =>
       window.innerWidth / Math.max(320, window.innerHeight - 112),
     ),
   );
-
-const LINKS_PER_NODE = 3;
-
-function buildEdges(list: NetNode[]) {
-  const seen = new Set<string>();
-  const out: [number, number][] = [];
-  const parent = list.map((_, i) => i);
-  const find = (i: number): number =>
-    parent[i] === i ? i : (parent[i] = find(parent[i]));
-  const d = (a: number, b: number) =>
-    Math.hypot(list[a].x - list[b].x, list[a].y - list[b].y);
-  const add = (a: number, b: number) => {
-    const key = a < b ? `${a}-${b}` : `${b}-${a}`;
-    if (a === b || seen.has(key)) return;
-    seen.add(key);
-    out.push([a, b]);
-    parent[find(a)] = find(b);
-  };
-
-  // 1. Nearest neighbours
-  list.forEach((_, i) => {
-    list
-      .map((_, j) => j)
-      .filter((j) => j !== i)
-      .sort((a, b) => d(i, a) - d(i, b))
-      .slice(0, i === 0 ? 6 : LINKS_PER_NODE)
-      .forEach((j) => add(i, j));
-  });
-
-  // 2. Links chosen by hand in network.ts
-  list.forEach((n, i) => {
-    n.links?.forEach((name) => {
-      const j = list.findIndex((m) => m.name === name);
-      if (j >= 0) add(i, j);
-    });
-  });
-
-  // 3. Join any separate groups to the main web
-  for (;;) {
-    const main = find(0);
-    let best: [number, number] | null = null;
-    for (let i = 0; i < list.length; i++) {
-      if (find(i) === main) continue;
-      for (let j = 0; j < list.length; j++) {
-        if (find(j) !== main) continue;
-        if (!best || d(i, j) < d(best[0], best[1])) best = [i, j];
-      }
-    }
-    if (!best) break;
-    add(best[0], best[1]);
-  }
-  return out;
-}
 
 const edges = EDGES;
 
