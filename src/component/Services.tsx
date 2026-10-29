@@ -6,7 +6,7 @@ export default function Services() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section id="services" className="relative  overflow-hidden py-24">
+    <section id="services" className="relative overflow-hidden py-12 md:py-24">
       <div aria-hidden className="absolute -right-40 top-20 h-96 w-96 animate-float-slow rounded-full bg-accent/15 blur-[120px] motion-reduce:animate-none" />
       <div aria-hidden className="absolute -left-40 bottom-0 h-96 w-96 animate-float rounded-full bg-leaf/15 blur-[120px] motion-reduce:animate-none" />
 
@@ -23,7 +23,7 @@ export default function Services() {
             return (
               <Reveal key={s.title} delay={i * 120}>
                 <article
-                  className={`group relative isolate overflow-hidden rounded-3xl transition duration-300 hover:-translate-y-2 hover:rotate-1 ${s.card}`}
+                  className={`group relative isolate overflow-hidden rounded-3xl transition duration-300 [@media(hover:hover)]:hover:-translate-y-2 [@media(hover:hover)]:hover:rotate-1 ${s.card}`}
                 >
                   {/* Background image layer */}
                   {s.img && (
@@ -85,6 +85,8 @@ export default function Services() {
     </section>
   );
 }
+
+
 
 // //List of services offered
 // import { services } from "../data/content";

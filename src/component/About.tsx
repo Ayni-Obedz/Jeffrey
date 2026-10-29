@@ -72,14 +72,25 @@ export default function About() {
           </div>
 
           <ul className="mt-8 flex flex-wrap gap-3">
-            {socials.map((s) => (
-              <li key={s.label}>
-                <a href={s.href} target="_blank" rel="noreferrer" className="rounded-full border border-white/20 px-4 py-2 text-sm font-medium transition hover:bg-leaf hover:text-ink">
-                  {s.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+              {socials.map((s) => {
+              const Icon = s.icon;
+
+              return (
+               <li key={s.label}>
+                 <a
+                   href={s.href}
+                   target="_blank"
+                   rel="noreferrer"
+                   aria-label={s.label}
+                   title={s.label}
+                   className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-xl transition hover:bg-leaf hover:text-ink"
+                 >
+                   <Icon />
+                 </a>
+               </li>
+               );
+               })}
+           </ul>
         </div>
       </div>
     </section>

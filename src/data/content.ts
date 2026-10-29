@@ -1,5 +1,9 @@
 //Content-> company names and links the info to where they would be placed in the other div files
-export type Social = { label: string; href: string };
+import type { IconType } from "react-icons";
+import { FaLinkedinIn, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
+export type Social = { label: string; href: string, icon: IconType; };
 export type tools = { name: string; logo: string; };
 export type Stat = { value: number; prefix?: string; suffix?: string; label: string };
 export type WorkItem = {
@@ -20,7 +24,7 @@ export const site = {
   title: "",
   company: "",
   email: "jeffrey.ejezie1994@gmail.com",
-  cv: "/CV/502016196_E_cnt_1.pdf",
+  cv: "/CV/Ejezie_Jeffrey_Chidiebere_SwiftXR_June2026_MatchedFont.pdf",
 };
 
 export const navLinks = [
@@ -32,10 +36,10 @@ export const navLinks = [
 ];
 
 export const socials: Social[] = [
-  { label: "LinkedIn", href: "www.linkedin.com/in/jeffrey-ejezie/" },
-  { label: "Whatsapp", href: "" },
-  { label: "Instagram", href: "https://instagram.com/your-handle" },
-  { label: "Email", href: "jeffrey.ejezie1994@gmail.com" },
+  { label: "LinkedIn", href: "www.linkedin.com/in/jeffrey-ejezie/", icon: FaLinkedinIn },
+  { label: "Whatsapp", href: "", icon: FaWhatsapp, },
+  { label: "Instagram", href: "https://instagram.com/your-handle", icon: FaInstagram, },
+  { label: "Email", href: "jeffrey.ejezie1994@gmail.com", icon: SiGmail, },
 ];
 
 export const tools = [
