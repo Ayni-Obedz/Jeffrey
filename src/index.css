@@ -4,10 +4,23 @@
   --color-ink: RGB(10, 10, 10);
   --color-accent: #38bdf8;
   --color-leaf: RGB(11, 235, 94);
+  --color-glowblue: #15f4ee;
+  --color-webpage1: #0f1720;
+  --color-webpage2: #17120f;
+  --color-webpage3: #101a14;
+  --color-webpage4: #15111c;
+  --color-webpage5: #1a1610;
+  --color-webpage6: #111a1a;
+  --color-webpage7: #1a1115;
+  --color-webpage8: #121216;
+
 
 
   /* Swap this stack for the bold font once chosen */
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 
+Manrope (woff2)
+"Segoe UI"
+sans-serif;
 
   --animate-float: float 14s ease-in-out infinite;
   --animate-float-slow: float 22s ease-in-out infinite reverse;

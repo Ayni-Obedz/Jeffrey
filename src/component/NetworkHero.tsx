@@ -567,7 +567,7 @@ export default function NetworkHero() {
         })}
       </div>
 
-      <p className="absolute inset-x-0 bottom-4 px-4 text-center text-xs tracking-wider text-white/50 sm:bottom-6 sm:text-sm">
+      <p className="absolute inset-x-0 bottom-7 px-4 text-center tracking-wider transition duration-500 ease-in-out text-white/50 sm:bottom-6 sm:text-sm sm:text-xs">
         CONNECTING YOUR ORGANIZATION TO THE WORLD
       </p>
     </section>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Layout from "./component/Layout";
 import NetworkHero from "./component/NetworkHero";
 import Hero from "./component/Hero";
@@ -10,9 +11,11 @@ import Services from "./component/Services";
 import Company from "./component/Company";
 import ContactSection from "./component/ContactSection";
 import Reveal from "./component/Reveal";
+import CaseStudy from "./component/CaseStudy";
 import { tools } from "./data/content";
+import { cases } from "./data/cases";
 
-export default function App() {
+function Home() {
   return (
     <Layout>
       <NetworkHero />
@@ -32,4 +35,18 @@ export default function App() {
       <Reveal><ContactSection /></Reveal>
     </Layout>
   );
+}
+
+export default function App() {
+  const slug = window.location.pathname.match(/^\/work\/([\w-]+)\/?$/)?.[1];
+  const study = cases.find((c) => c.slug === slug);
+
+  // Coming back from a case study to /#work
+  useEffect(() => {
+    if (!study && window.location.hash) {
+      document.getElementById(window.location.hash.slice(1))?.scrollIntoView();
+    }
+  }, [study]);
+
+  return study ? <CaseStudy study={study} /> : <Home />;
 }

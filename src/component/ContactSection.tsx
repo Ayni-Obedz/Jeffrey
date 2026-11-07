@@ -24,9 +24,9 @@ export default function ContactSection() {
 
         <a
           href={`mailto:${site.email}`}
-          className="mt-10 inline-block rounded-full bg-accent px-8 py-4 font-semibold text-ink transition hover:bg-white"
+          className={`mt-10 inline-block rounded-full bg-accent px-8 py-4 font-semibold text-ink transition hover:bg-white hover:scale-105 motion-reduce:transition-none`}
         >
-          {site.email}
+          <p className="">Let's Talk</p>
         </a>
 
         <ul className="mt-10 flex flex-wrap justify-center gap-4">

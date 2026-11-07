@@ -47,9 +47,9 @@ export default function Hero() {
         muted
         playsInline
         preload="auto"
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-fill"
         />
-        <div className="absolute inset-0 bg-ink/70" />
+        <div className="absolute inset-0 bg-ink/50" />
         <div className="absolute -top-40 left-1/4 h-32rem w-32rem animate-float rounded-full bg-accent/30 blur-[120px] motion-reduce:animate-none" />
         <div className="absolute -bottom-40 right-1/4 h-28rem] w-28rem animate-float-slow rounded-full bg-leaf/25 blur-[120px] motion-reduce:animate-none" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-size:64px_64px mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)" />
@@ -72,8 +72,8 @@ export default function Hero() {
           Revenue growth, built on relationships.
         </h1>
 
-        <p className="mx-auto mt-8 max-w-2xl text-lg text-/70 md:text-xl">
-          {site.name} helps businesses win customers and scale. [ONE-LINE POSITIONING STATEMENT]
+        <p className="mx-auto mt-8 max-w-3xl text-lg text-white/70 md:text-2xl">
+          {site.name} helps businesses win customers and scale.
         </p>
 
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">

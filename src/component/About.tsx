@@ -28,7 +28,7 @@ export default function About() {
 
       <div className="mx-auto max-w-6xl px-6 pb-24 pt-10 md:py-24">
         <div className="max-w-xl">
-          <h2 className="text-5xl font-extrabold tracking-tight md:text-7xl">Hello, I'm {site.name}.</h2>
+          <h2 className="text-5xl font-extrabold tracking-tight md:text-7xl">I'm {site.name}.</h2>
 
           <p className="mt-6 text-lg text-white/70">
             A results-driven sales professional with over 6 years of experience driving revenue growth, managing client

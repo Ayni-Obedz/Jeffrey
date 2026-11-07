@@ -158,7 +158,7 @@ export default function Career() {
   return (
     <section id="career" className="border-t border-white/10 py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <h2 className="text-4xl font-extrabold tracking-tight md:text-6xl">My career</h2>
+        <h2 className="text-4xl font-extrabold tracking-tight md:text-6xl">Career <span className="text-leaf">History</span></h2>
         <p className="mt-4 max-w-xl text-white/60">A little about where I've been: the companies, roles and years behind the work.</p>
         {/* <p className="mt-2 text-sm text-white/40">{roles.length} roles, keep scrolling</p> */}
 
