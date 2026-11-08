@@ -122,3 +122,8 @@ These are the line numbers in the NetworkHero.tsx I gave you last. If you’ve e
 // Line 181: the light wave position.
 
 // If you’re only widening it, lines 13, 285 and 286 are the ones to look at first. In VS Code, press Ctrl+G and type a number to jump to a line.
+
+
+
+//To commit properly from now on.
+"Add Vercel rewrite for case study pages".
