@@ -3,7 +3,7 @@ import { cases, type Case } from "../data/cases";
 
 function Slot({ src }: { src?: string }) {
   return (
-    <div className="aspect-video overflow-hidden rounded-2xl bg-white/[0.04]">
+    <div className="aspect-video overflow-hidden rounded-2xl bg-white/0.04">
       {src && <img src={src} alt="" className="h-full w-full object-cover" />}
     </div>
   );

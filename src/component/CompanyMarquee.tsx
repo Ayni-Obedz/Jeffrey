@@ -24,7 +24,7 @@ export default function CompanyMarquee({ companies, duration = 30000 }: Props) {
     <div
       onMouseEnter={() => animRef.current?.play()}
       onMouseLeave={() => animRef.current?.play()}
-      className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]"
+      className="relative overflow-hidden mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)"
     >
       <ul ref={trackRef} className="flex w-max items-center">
         {row.map((c, i) => (
