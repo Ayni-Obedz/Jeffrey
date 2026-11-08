@@ -236,7 +236,7 @@ export default function Company() {
   return (
     <section id="company" className="border-t border-white/10 py-12 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <h2 className="text-4xl font-extrabold tracking-tight md:text-6xl">CEO of <span className="text-accent">Sales</span><span className="text-leaf">Pulse</span><span className="text-glowblue">Tech</span></h2>
+        <h2 className="text-4xl font-extrabold tracking-tight md:text-6xl">Founder of <span className="text-accent">Sales</span><span className="text-leaf">Pulse</span><span className="text-glowblue">Tech</span></h2>
         <p className="mt-4 max-w-xl text-white/60">
           Alongside my career, I lead SalesPulse Technologies: what we do, how we work and the services we offer.
         </p>
