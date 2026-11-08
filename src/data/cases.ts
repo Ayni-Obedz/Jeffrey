@@ -17,7 +17,7 @@ export type Case = {
 export const cases: Case[] = [
   {
     slug: "sales-pipeline",
-    title: "Rebuilding the Sales Pipeline for a B2B Technology Company",
+    title: "Rebuilding the Sales Pipeline for Septa Software",
     page: "bg-webpage1",
     hero: "",
     overview: [
@@ -65,7 +65,7 @@ export const cases: Case[] = [
   },
   {
     slug: "lead-generation",
-    title: "Outbound Lead Generation for a B2B Services Company",
+    title: "Outbound Lead Generation for Efficacy Professional Services",
     page: "bg-webpage3",
     tools: ["Apollo", "Saleshandy", "LinkedIn", "Spreadsheets", "CRM systems"],
     overview: [
@@ -115,7 +115,7 @@ export const cases: Case[] = [
   },
   {
     slug: "email-outreach",
-    title: "Email Outreach and Follow-up Programme for a B2B Business",
+    title: "Email Outreach and Follow-up Programme for Efficacy Professional Services",
     page: "bg-webpage5",
     tools: ["Saleshandy", "Apollo", "Spreadsheet tracking"],
     overview: [
@@ -189,7 +189,7 @@ export const cases: Case[] = [
   },
   {
     slug: "growth-system",
-    title: "Building a Repeatable Sales Growth System for an Emerging Business",
+    title: "Building a Repeatable Sales Growth System for SalesPulse Technologies",
     page: "bg-webpage8",
     overview: [
       "One of the most important aspects of business development is creating a sales system that can support sustainable growth rather than depending on occasional referrals or inconsistent outreach.",

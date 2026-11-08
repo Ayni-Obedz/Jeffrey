@@ -20,7 +20,7 @@ export default function Navbar() {
 
         {/* Name and logo */}
         <a
-          href="#top"
+          href=""
           className={`${pill} flex w-fit min-w-0 items-center gap-2 px-3 py-2.5 text-base font-extrabold tracking-tight sm:gap-3 sm:px-4 sm:text-lg lg:justify-self-start lg:px-5 lg:py-3`}
         >
           {site.logo && (
