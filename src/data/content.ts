@@ -72,12 +72,12 @@ export const leadsByMonth = [
 ];
 
 export const works: WorkItem[] = [
-  { title: "Rebuilding the sales pipeline for [Client]", blurb: "Mapped the funnel, fixed the hand-offs between marketing and sales, and set a clear follow-up routine for every lead.", categories: ["Sales", "Leadership"], date: "2026", result: "+25% increase in closed deals", href: "/work/sales-pipeline" },
-  { title: "Launching a B2B AI Product Marketing and Sales Campaign", blurb: "Planned and ran a multi-channel campaign built around one offer and one clear call to action.", categories: ["Marketing"], date: "", result: "10K reach", href: "/work/ai-campaign" },
-  { title: "Outbound lead generation for Efficacy Professional Services", blurb: "Built a targeted prospect list, wrote the outreach sequences and tracked replies through to booked calls.", categories: ["Lead Gen", "Sales"], date: "", result: "[XX] qualified leads a month", href: "/work/lead-generation" },
-  { title: "Growing SalesPulse from the bottom up", blurb: "Set the strategy, hired the team and put reporting in place so decisions came from numbers.", categories: ["Leadership"], date: "2026", result: "4M+ revenue", href: "/work/growth-system" },
-  { title: "Email and retention programme for Efficacy Professional Services", blurb: "Segmented the customer list and automated the messages that bring buyers back.", categories: ["Marketing", "Lead Gen"], date: "2025-2026", result: "+5% repeat purchases", href: "/work/email-outreach" },
-  { title: "Training the sales team at Septa Software", blurb: "Wrote the playbook, ran the workshops and coached reps on discovery calls and objections.", categories: ["Sales", "Leadership"], date: "2026", result: "90% quota attainment", href: "/work/sales-process" },
+  { title: "Rebuilding the sales pipeline for Septa Software", image: "/Work experience/septa.png", blurb: "Mapped the funnel, fixed the hand-offs between marketing and sales, and set a clear follow-up routine for every lead.", categories: ["Sales", "Leadership"], date: "2026", result: "+25% increase in closed deals", href: "/work/sales-pipeline" },
+  { title: "Launching a B2B AI Product Marketing and Sales Campaign", image: "", blurb: "Planned and ran a multi-channel campaign built around one offer and one clear call to action.", categories: ["Marketing"], date: "", result: "10K reach", href: "/work/ai-campaign" },
+  { title: "Outbound lead generation for Efficacy Professional Services", image: "", blurb: "Built a targeted prospect list, wrote the outreach sequences and tracked replies through to booked calls.", categories: ["Lead Gen", "Sales"], date: "", result: "[XX] qualified leads a month", href: "/work/lead-generation" },
+  { title: "Growing SalesPulse from the bottom up", image: "", blurb: "Set the strategy, hired the team and put reporting in place so decisions came from numbers.", categories: ["Leadership"], date: "2026", result: "4M+ revenue", href: "/work/growth-system" },
+  { title: "Email and retention programme for Efficacy Professional Services", image: "", blurb: "Segmented the customer list and automated the messages that bring buyers back.", categories: ["Marketing", "Lead Gen"], date: "2025-2026", result: "+5% repeat purchases", href: "/work/email-outreach" },
+  { title: "Training the sales team at Septa Software", image: "", blurb: "Wrote the playbook, ran the workshops and coached reps on discovery calls and objections.", categories: ["Sales", "Leadership"], date: "2026", result: "90% quota attainment", href: "/work/sales-process" },
 ];
 
 export const roles: Role[] = [
