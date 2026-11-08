@@ -11,7 +11,7 @@ export default function About() {
   return (
     <section id="about" className="relative isolate overflow-hidden border-t border-white/10 bg-ink text-white">
       {/* Soft colour glows behind everything */}
-      <div aria-hidden className="absolute -left-32 top-10 -z-20 h-28rem w-28rem rounded-full bg-accent/15 blur-[120px]" />
+      <div aria-hidden className="absolute -left-32 top-10 -z-20 h-[28rem] w-[28rem] rounded-full bg-accent/15 blur-[120px]" />
       <div aria-hidden className="absolute bottom-0 right-1/4 -z-20 h-24rem w-[24rem] rounded-full bg-leaf/15 blur-[120px]" />
 
       {/* Portrait: put a transparent PNG at public/portrait.png. It sits on the right, behind the text. */}
@@ -21,7 +21,7 @@ export default function About() {
         onError={(e) => {
           e.currentTarget.style.display = "none";
         }}
-        className="relative mx-auto mt-24 h-96 w-full object-contain object-bottom md:absolute md:bottom-0 md:right-0 md:-z-10 md:mt-0 md:h-full md:w-3/5 md:object-bottom-right"
+        className="relative mx-auto mt-24 h-96 w-full object-contain object-bottom md:absolute md:bottom-0 md:right-0 md:-z-10 md:mt-0 md:h-full md:w-3/5 md:object-right-bottom"
       />
       {/* Darkens the left side so the text stays readable over the photo */}
       <div aria-hidden className="absolute inset-0 -z-10 bg-linear-to-r from-ink via-ink/80 to-transparent md:via-ink/50" />
@@ -53,7 +53,7 @@ export default function About() {
             <ul className="mt-4 space-y-5 border-l border-white/15 pl-6">
               {education.map((e) => (
                 <li key={e.title} className="relative">
-                  <span aria-hidden className="absolute -left-1.85rem top-2 h-2 w-2 rounded-full bg-leaf" />
+                  <span aria-hidden className="absolute -left-[1.85rem] top-2 h-2 w-2 rounded-full bg-leaf" />
                   <p className="text-xs text-white/50">{e.years}</p>
                   <p className="font-bold">{e.title}</p>
                   <p className="text-sm text-white/70">{e.detail}</p>
