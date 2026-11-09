@@ -31,7 +31,7 @@ export default function About() {
           <h2 className="text-5xl font-extrabold tracking-tight md:text-7xl">I'm {site.name}.</h2>
 
           <p className="mt-6 text-lg text-white/70">
-            A results-driven sales professional with over 4 years of experience driving revenue growth, managing client
+            A results-driven sales professional with over 8 years of experience driving revenue growth, managing client
             relationships and hitting sales targets across diverse industries.
           </p>
           <p className="mt-4 text-lg text-white/70">

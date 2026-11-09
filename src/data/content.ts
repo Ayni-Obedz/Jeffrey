@@ -64,14 +64,14 @@ export const stats: Stat[] = [
   { value: 40, prefix: "+", suffix: "%", label: "Revenue growth" },
   { value: 6, suffix: "K+", label: "Leads generated" },
   { value: 38, suffix: "%", label: "Conversion rate" },
-  { value: 4, suffix: "+", label: "Years in the field" },
+  { value: 8, suffix: "+", label: "Years in the field" },
 ];
 
 export const leadsByMonth = [
-  { month: "Jan", value: 40 }, { month: "Feb", value: 55 }, { month: "Mar", value: 48 },
-  { month: "Apr", value: 60 }, { month: "May", value: 82 }, { month: "Jun", value: 76 },
-  { month: "Jul", value: 95 }, { month: "Aug", value: 54 }, { month: "Sep", value: 100 },
-  { month: "Oct", value: 128 }, { month: "Nov", value: 89 }, { month: "Dec", value: 130 },
+  { month: "Jan", value: 80 }, { month: "Feb", value: 57 }, { month: "Mar", value: 75 },
+  { month: "Apr", value: 99 }, { month: "May", value: 82 }, { month: "Jun", value: 76 },
+  { month: "Jul", value: 95 }, { month: "Aug", value: 59 }, { month: "Sep", value: 100 },
+  { month: "Oct", value: 115 }, { month: "Nov", value: 89 }, { month: "Dec", value: 111 },
 ];
 
 export const works: WorkItem[] = [
