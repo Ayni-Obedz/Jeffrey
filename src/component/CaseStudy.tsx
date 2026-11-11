@@ -17,7 +17,7 @@ export default function CaseStudy({ study }: { study: Case }) {
   }, [study]);
 
   return (
-    <div className={`min-h-screen font-sans text-white ${study.page}`}>
+    <div className={`min-h-screen font-sans text-white bg-linear-to-br from-white/80 via-ink to-leaf/90 ${study.page} `}>
       <article className="mx-auto max-w-3xl px-6 py-10 md:py-14">
         <a href="/#work" className="border-red/10  rounded-3xl text-sm text-white/60 transition hover:text-white">
           ← Work

@@ -127,3 +127,7 @@ These are the line numbers in the NetworkHero.tsx I gave you last. If you’ve e
 
 //To commit properly from now on.
 "Add Vercel rewrite for case study pages".
+
+
+//Concept
+Automated sending to people(the sending is a airplane message), this sending leads to growth and people who recieve the send to to others.
